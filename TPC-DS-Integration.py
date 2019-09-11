@@ -95,23 +95,23 @@ inventory_table = "scYRAOaltrU="
 #     "spark.cosmos.connector.batch.maxColumns" : maxNumberOfRecordsToScan
 # }
 
-# var config_store_sales = {  
-#     "spark.cosmos.AccountEndpoint" : "https://testdocumentservice-southeastasia.documents-test.windows-int.net:443/", 
-#     "spark.cosmos.AccountKey" : "d5sVMOQa8BoLtvxf8EuQsRK3guroZfyR6mChGGqJFJTeAf6Kl3tnMZTUla2x9ZzkHgGfoTmb0AjMeLfhOXguGA==", 
-#     "spark.cosmos.globalDatabaseAccount" : "testdocumentservice",
-#     "spark.cosmos.databaseRid" : databaseRid,
-#     "spark.cosmos.collectionRid" : store_sales_table,
-#     "spark.cosmos.storageAccount:0" : "sanayaktest,2QzrOvqo0reF+5gVXXn9SkXPTTyI7KoE05qaPU8r/NLrwVPcFgk4Og7fUZyrT/NZ4nVRfRuLVfMr/3xZBDrxOw==,testdocumentservice",
-#     "spark.cosmos.rootDir" : "wasbs://testdocumentservice@sanayaktest.blob.core.windows.net",
-#     "spark.cosmos.connector.inputPartitionMaxSizeInMbPerTask" : maxSizeInMbPerTask,
-#     "spark.cosmos.connector.inputPartitionMaxDataFilesToProcessPerTask" : numberOfDataFilesToProcessPerTask,
-#     "spark.cosmos.connector.batch.enable" : enableBatchMode,
-#     "spark.cosmos.connector.batch.columnarVectorCapacity" : columnarVectorCapacity,
-#     "spark.cosmos.connector.batch.useOffHeapMemory" : columnarOffHeapMemory,
-#     "spark.cosmos.connector.enableInidationFiltering" : enableInidationFiltering,
-#     "spark.cosmos.connector.storageReadBufferSizeInBytes" : storageReadBufferSizeInBytes,
-#     "spark.cosmos.connector.batch.maxColumns" : maxNumberOfRecordsToScan
-# }
+config_store_sales = {  
+    "spark.cosmos.AccountEndpoint" : "https://testdocumentservice-southeastasia.documents-test.windows-int.net:443/", 
+    "spark.cosmos.AccountKey" : "d5sVMOQa8BoLtvxf8EuQsRK3guroZfyR6mChGGqJFJTeAf6Kl3tnMZTUla2x9ZzkHgGfoTmb0AjMeLfhOXguGA==", 
+    "spark.cosmos.globalDatabaseAccount" : "testdocumentservice",
+    "spark.cosmos.databaseRid" : databaseRid,
+    "spark.cosmos.collectionRid" : store_sales_table,
+    "spark.cosmos.storageAccount:0" : "sanayaktest,2QzrOvqo0reF+5gVXXn9SkXPTTyI7KoE05qaPU8r/NLrwVPcFgk4Og7fUZyrT/NZ4nVRfRuLVfMr/3xZBDrxOw==,testdocumentservice",
+    "spark.cosmos.rootDir" : "wasbs://testdocumentservice@sanayaktest.blob.core.windows.net",
+    "spark.cosmos.connector.inputPartitionMaxSizeInMbPerTask" : maxSizeInMbPerTask,
+    "spark.cosmos.connector.inputPartitionMaxDataFilesToProcessPerTask" : numberOfDataFilesToProcessPerTask,
+    "spark.cosmos.connector.batch.enable" : enableBatchMode,
+    "spark.cosmos.connector.batch.columnarVectorCapacity" : columnarVectorCapacity,
+    "spark.cosmos.connector.batch.useOffHeapMemory" : columnarOffHeapMemory,
+    "spark.cosmos.connector.enableInidationFiltering" : enableInidationFiltering,
+    "spark.cosmos.connector.storageReadBufferSizeInBytes" : storageReadBufferSizeInBytes,
+    "spark.cosmos.connector.batch.maxColumns" : maxNumberOfRecordsToScan
+}
 
 # var config_web_sales = {
 #   "spark.cosmos.AccountEndpoint" : "https://testdocumentservice-southeastasia.documents-test.windows-int.net:443/", 
