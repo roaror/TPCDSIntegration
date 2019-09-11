@@ -33,14 +33,14 @@ spark = SparkSession \
  # notebookName = getArgument("notebookName", "cosmos-connector-tpcds")
  # numberOfQueries = getArgument("numberOfQueries", "10").toInt
  # repNumber = getArgument("repNumber", "1").toInt
- enableBatchMode = "true"
- maxSizeInMbPerTask =  "128"
- enableInidationFiltering = "false"
- storageReadBufferSizeInBytes = "4194304"
- maxNumberOfRecordsToScan = "100"
+enableBatchMode = "true"
+maxSizeInMbPerTask =  "128"
+enableInidationFiltering = "false"
+storageReadBufferSizeInBytes = "4194304"
+maxNumberOfRecordsToScan = "100"
 
- columnarVectorCapacity = "8192"
- columnarOffHeapMemory = "false"
+columnarVectorCapacity = "8192"
+columnarOffHeapMemory = "false"
 
 # // directoryStructure= notebookName+"/batch="+enableBatchMode+"/iobuffersize="+storageReadBufferSizeInBytes+"/"+numberOfQueries+"/"+repNumber
 
@@ -48,33 +48,33 @@ spark = SparkSession \
 # // taskMetrics = new TaskMetrics(spark, true) 
 # // stageMetrics = new StageMetrics(spark)
 
- numberOfDataFilesToProcessPerTask = "100"
+numberOfDataFilesToProcessPerTask = "100"
 
- databaseRid = "scYRAA=="
- catalog_sales_table = "scYRAMQQRQs="
- store_sales_table = "scYRAK46Thg="
- web_sales_table = "scYRAJqUJDw="
- catalog_returns_table = "scYRAIhfsfI="
- store_returns_table = "scYRAMw4J1E="
- web_returns_table = "scYRAISdhhA="
- customer_table = "scYRAJFdipM="
- customer_address_table = "scYRANg7NrE="
- customer_demographics_table = "scYRAIVuxGc="
- date_dim_table = "scYRAPeHagM="
- item_table = "scYRAOrCNZ4="
- promotion_table = "scYRAIo-7aI="
- store_table = "scYRAIP5njc="
- reason_table = "scYRAPuderE="
- catalog_page_table = "scYRAPuJSSE="
- web_site_table = "scYRAL0vNJ0="
- ship_mode_table = "scYRANTmJCg="
- time_dim_table = "scYRAKbFOmM="
- warehouse_table = "scYRAN1naBw="
- income_band_table = "scYRAMWYynQ="
- household_demographics_table = "scYRAKppG8Q="
- call_center_table = "scYRAITFwos="
- web_page_table = "scYRAIiThEo="
- inventory_table = "scYRAOaltrU="
+databaseRid = "scYRAA=="
+catalog_sales_table = "scYRAMQQRQs="
+store_sales_table = "scYRAK46Thg="
+web_sales_table = "scYRAJqUJDw="
+catalog_returns_table = "scYRAIhfsfI="
+store_returns_table = "scYRAMw4J1E="
+web_returns_table = "scYRAISdhhA="
+customer_table = "scYRAJFdipM="
+customer_address_table = "scYRANg7NrE="
+customer_demographics_table = "scYRAIVuxGc="
+date_dim_table = "scYRAPeHagM="
+item_table = "scYRAOrCNZ4="
+promotion_table = "scYRAIo-7aI="
+store_table = "scYRAIP5njc="
+reason_table = "scYRAPuderE="
+catalog_page_table = "scYRAPuJSSE="
+web_site_table = "scYRAL0vNJ0="
+ship_mode_table = "scYRANTmJCg="
+time_dim_table = "scYRAKbFOmM="
+warehouse_table = "scYRAN1naBw="
+income_band_table = "scYRAMWYynQ="
+household_demographics_table = "scYRAKppG8Q="
+call_center_table = "scYRAITFwos="
+web_page_table = "scYRAIiThEo="
+inventory_table = "scYRAOaltrU="
 
 
 # var config_catalog_sales = {
@@ -198,39 +198,39 @@ spark = SparkSession \
 #     "spark.cosmos.connector.storageReadBufferSizeInBytes" : storageReadBufferSizeInBytes
 # }
 
-# var config_date_dim = {
-#   "spark.cosmos.AccountEndpoint" : "https://testdocumentservice-southeastasia.documents-test.windows-int.net:443/", 
-#     "spark.cosmos.AccountKey" : "d5sVMOQa8BoLtvxf8EuQsRK3guroZfyR6mChGGqJFJTeAf6Kl3tnMZTUla2x9ZzkHgGfoTmb0AjMeLfhOXguGA==", 
-#     "spark.cosmos.globalDatabaseAccount" : "testdocumentservice",
-#     "spark.cosmos.databaseRid" : databaseRid,
-#     "spark.cosmos.collectionRid" : date_dim_table,
-#     "spark.cosmos.storageAccount:0" : "stoanalyticspremseasia,5AvM6bX9HYkyMpf0byhwpnJSu1HbkSGtoPvrSHsYpTScyzp6tHS+1mM5Bl6vCQAWn2hwUxwvrKxWRGS0fUwgDA==,testdocumentservice",
-#     "spark.cosmos.rootDir" : "wasbs://testdocumentservice@stoanalyticspremseasia.blob.core.windows.net",
-#     "spark.cosmos.connector.inputPartitionMaxSizeInMbPerTask" : maxSizeInMbPerTask,
-#     "spark.cosmos.connector.inputPartitionMaxDataFilesToProcessPerTask" : numberOfDataFilesToProcessPerTask,
-#     "spark.cosmos.connector.batch.enable" : enableBatchMode,
-#     "spark.cosmos.connector.batch.columnarVectorCapacity" : columnarVectorCapacity,
-#     "spark.cosmos.connector.batch.useOffHeapMemory" : columnarOffHeapMemory,
-#     "spark.cosmos.connector.enableInidationFiltering" : enableInidationFiltering,
-#     "spark.cosmos.connector.storageReadBufferSizeInBytes" : storageReadBufferSizeInBytes
-# )
+config_date_dim = {
+  "spark.cosmos.AccountEndpoint" : "https://testdocumentservice-southeastasia.documents-test.windows-int.net:443/", 
+    "spark.cosmos.AccountKey" : "d5sVMOQa8BoLtvxf8EuQsRK3guroZfyR6mChGGqJFJTeAf6Kl3tnMZTUla2x9ZzkHgGfoTmb0AjMeLfhOXguGA==", 
+    "spark.cosmos.globalDatabaseAccount" : "testdocumentservice",
+    "spark.cosmos.databaseRid" : databaseRid,
+    "spark.cosmos.collectionRid" : date_dim_table,
+    "spark.cosmos.storageAccount:0" : "stoanalyticspremseasia,5AvM6bX9HYkyMpf0byhwpnJSu1HbkSGtoPvrSHsYpTScyzp6tHS+1mM5Bl6vCQAWn2hwUxwvrKxWRGS0fUwgDA==,testdocumentservice",
+    "spark.cosmos.rootDir" : "wasbs://testdocumentservice@stoanalyticspremseasia.blob.core.windows.net",
+    "spark.cosmos.connector.inputPartitionMaxSizeInMbPerTask" : maxSizeInMbPerTask,
+    "spark.cosmos.connector.inputPartitionMaxDataFilesToProcessPerTask" : numberOfDataFilesToProcessPerTask,
+    "spark.cosmos.connector.batch.enable" : enableBatchMode,
+    "spark.cosmos.connector.batch.columnarVectorCapacity" : columnarVectorCapacity,
+    "spark.cosmos.connector.batch.useOffHeapMemory" : columnarOffHeapMemory,
+    "spark.cosmos.connector.enableInidationFiltering" : enableInidationFiltering,
+    "spark.cosmos.connector.storageReadBufferSizeInBytes" : storageReadBufferSizeInBytes
+}
 
-# var config_item = {
-#   "spark.cosmos.AccountEndpoint" : "https://testdocumentservice-southeastasia.documents-test.windows-int.net:443/", 
-#     "spark.cosmos.AccountKey" : "d5sVMOQa8BoLtvxf8EuQsRK3guroZfyR6mChGGqJFJTeAf6Kl3tnMZTUla2x9ZzkHgGfoTmb0AjMeLfhOXguGA==", 
-#     "spark.cosmos.globalDatabaseAccount" : "testdocumentservice",
-#     "spark.cosmos.databaseRid" : databaseRid,
-#     "spark.cosmos.collectionRid" : item_table,
-#     "spark.cosmos.storageAccount:0" : "stoanalyticspremseasia,5AvM6bX9HYkyMpf0byhwpnJSu1HbkSGtoPvrSHsYpTScyzp6tHS+1mM5Bl6vCQAWn2hwUxwvrKxWRGS0fUwgDA==,testdocumentservice",
-#     "spark.cosmos.rootDir" : "wasbs://testdocumentservice@stoanalyticspremseasia.blob.core.windows.net",
-#     "spark.cosmos.connector.inputPartitionMaxSizeInMbPerTask" : maxSizeInMbPerTask,
-#     "spark.cosmos.connector.inputPartitionMaxDataFilesToProcessPerTask" : numberOfDataFilesToProcessPerTask,
-#     "spark.cosmos.connector.batch.enable" : enableBatchMode,
-#     "spark.cosmos.connector.batch.columnarVectorCapacity" : columnarVectorCapacity,
-#     "spark.cosmos.connector.batch.useOffHeapMemory" : columnarOffHeapMemory,
-#     "spark.cosmos.connector.enableInidationFiltering" : enableInidationFiltering,
-#     "spark.cosmos.connector.storageReadBufferSizeInBytes" : storageReadBufferSizeInBytes
-# )
+ config_item = {
+  "spark.cosmos.AccountEndpoint" : "https://testdocumentservice-southeastasia.documents-test.windows-int.net:443/", 
+    "spark.cosmos.AccountKey" : "d5sVMOQa8BoLtvxf8EuQsRK3guroZfyR6mChGGqJFJTeAf6Kl3tnMZTUla2x9ZzkHgGfoTmb0AjMeLfhOXguGA==", 
+    "spark.cosmos.globalDatabaseAccount" : "testdocumentservice",
+    "spark.cosmos.databaseRid" : databaseRid,
+    "spark.cosmos.collectionRid" : item_table,
+    "spark.cosmos.storageAccount:0" : "stoanalyticspremseasia,5AvM6bX9HYkyMpf0byhwpnJSu1HbkSGtoPvrSHsYpTScyzp6tHS+1mM5Bl6vCQAWn2hwUxwvrKxWRGS0fUwgDA==,testdocumentservice",
+    "spark.cosmos.rootDir" : "wasbs://testdocumentservice@stoanalyticspremseasia.blob.core.windows.net",
+    "spark.cosmos.connector.inputPartitionMaxSizeInMbPerTask" : maxSizeInMbPerTask,
+    "spark.cosmos.connector.inputPartitionMaxDataFilesToProcessPerTask" : numberOfDataFilesToProcessPerTask,
+    "spark.cosmos.connector.batch.enable" : enableBatchMode,
+    "spark.cosmos.connector.batch.columnarVectorCapacity" : columnarVectorCapacity,
+    "spark.cosmos.connector.batch.useOffHeapMemory" : columnarOffHeapMemory,
+    "spark.cosmos.connector.enableInidationFiltering" : enableInidationFiltering,
+    "spark.cosmos.connector.storageReadBufferSizeInBytes" : storageReadBufferSizeInBytes
+}
 
 # var config_customer_address = {
 #   "spark.cosmos.AccountEndpoint" : "https://testdocumentservice-southeastasia.documents-test.windows-int.net:443/", 
@@ -490,18 +490,18 @@ config_call_center = {
 
 
  # catalog_sales = spark.read.format("com.microsoft.azure.cosmos.analytics.spark.connector.CosmosSource").options {config_catalog_sales}.load()
- # store_sales = spark.read.format("com.microsoft.azure.cosmos.analytics.spark.connector.CosmosSource").options {config_store_sales}.load()
+store_sales = spark.read.format("com.microsoft.azure.cosmos.analytics.spark.connector.CosmosSource").options(**config_store_sales).load()
  # web_sales = spark.read.format("com.microsoft.azure.cosmos.analytics.spark.connector.CosmosSource").options {config_web_sales}.load()
  # store_returns = spark.read.format("com.microsoft.azure.cosmos.analytics.spark.connector.CosmosSource").options {config_store_returns}.load()
  # catalog_returns = spark.read.format("com.microsoft.azure.cosmos.analytics.spark.connector.CosmosSource").options {config_catalog_returns}.load()
  # web_returns = spark.read.format("com.microsoft.azure.cosmos.analytics.spark.connector.CosmosSource").options {config_web_returns}.load()
  # customer = spark.read.format("com.microsoft.azure.cosmos.analytics.spark.connector.CosmosSource").options {config_customer}.load()
- # date_dim = spark.read.format("com.microsoft.azure.cosmos.analytics.spark.connector.CosmosSource").options {config_date_dim}.load()
- # item = spark.read.format("com.microsoft.azure.cosmos.analytics.spark.connector.CosmosSource").options {config_item}.load()
+date_dim = spark.read.format("com.microsoft.azure.cosmos.analytics.spark.connector.CosmosSource").options(**config_date_dim).load()
+item = spark.read.format("com.microsoft.azure.cosmos.analytics.spark.connector.CosmosSource").options(**config_item).load()
  # customer_address = spark.read.format("com.microsoft.azure.cosmos.analytics.spark.connector.CosmosSource").options {config_customer_address}.load()
  # promotion = spark.read.format("com.microsoft.azure.cosmos.analytics.spark.connector.CosmosSource").options {config_promotion}.load()
  # customer_demographics = spark.read.format("com.microsoft.azure.cosmos.analytics.spark.connector.CosmosSource").options {config_customer_demographics}.load()
-
+call_center = spark.read.format("com.microsoft.azure.cosmos.analytics.spark.connector.CosmosSource").options(**config_call_center).load()
 # catalog_sales.createOrReplaceTempView("catalog_sales")
 # store_sales.createOrReplaceTempView("store_sales")
 # web_sales.createOrReplaceTempView("web_sales")
@@ -529,8 +529,7 @@ config_call_center = {
  # web_page = spark.read.format("com.microsoft.azure.cosmos.analytics.spark.connector.CosmosSource").options {config_web_page}.load()
  # inventory = spark.read.format("com.microsoft.azure.cosmos.analytics.spark.connector.CosmosSource").options {config_inventory}.load()
 
-call_center = spark.read.format(
-    "com.microsoft.azure.cosmos.analytics.spark.connector.CosmosSource").options(**config_call_center).load()
+
 
 # store.createOrReplaceTempView("store")
 # reason.createOrReplaceTempView("reason")
@@ -616,23 +615,23 @@ call_center = spark.read.format(
 
 
 # #Register all tables in Spark SQL
-# call_center.createOrReplaceTempView("call_center")
+call_center.createOrReplaceTempView("call_center")
 # catalog_returns.createOrReplaceTempView("catalog_returns")
 # customer.createOrReplaceTempView("customer")
 # customer_demographics.createOrReplaceTempView("customer_demographics")
 # dbgen_version.createOrReplaceTempView("dbgen_version")
 # income_band.createOrReplaceTempView("income_band")
-# item.createOrReplaceTempView("item")
+item.createOrReplaceTempView("item")
 # reason.createOrReplaceTempView("reason")
 # store.createOrReplaceTempView("store")
-# store_sales.createOrReplaceTempView("store_sales")
+store_sales.createOrReplaceTempView("store_sales")
 # warehouse.createOrReplaceTempView("warehouse")
 # web_returns.createOrReplaceTempView("web_returns")
 # web_site.createOrReplaceTempView("web_site")
 # catalog_page.createOrReplaceTempView("catalog_page")
 # catalog_sales.createOrReplaceTempView("catalog_sales")
 # customer_address.createOrReplaceTempView("customer_address")
-# date_dim.createOrReplaceTempView("date_dim")
+date_dim.createOrReplaceTempView("date_dim")
 # household_demographics.createOrReplaceTempView("household_demographics")
 # inventory.createOrReplaceTempView("inventory")
 # promotion.createOrReplaceTempView("promotion")
@@ -698,6 +697,8 @@ a.show()
 
 # from datetime import datetime
 
+
+
 # # COMMAND ----------
 # q1start = datetime.now()
 
@@ -717,6 +718,10 @@ a.show()
 #    AND s_state = 'TN' \
 #    AND ctr1.ctr_customer_sk = c_customer_sk \
 #    ORDER BY c_customer_id LIMIT 100").show()
+
+
+
+
 
 # q1end = datetime.now()
 # # COMMAND ----------
@@ -772,18 +777,16 @@ a.show()
 #  WHERE d_week_seq1=d_week_seq2-53  \
 #  ORDER BY d_week_seq1").show()
 
-# q2end = datetime.now()
-# # COMMAND ----------
-# q3start = datetime.now()
-# query3 = spark.sql("SELECT dt.d_year, item.i_brand_id brand_id, item.i_brand brand,SUM(ss_ext_sales_price) sum_agg  \
-#  FROM  date_dim dt, store_sales, item  \
-#  WHERE dt.d_date_sk = store_sales.ss_sold_date_sk  \
-#    AND store_sales.ss_item_sk = item.i_item_sk  \
-#    AND item.i_manufact_id = 128  \
-#    AND dt.d_moy=11  \
-#  GROUP BY dt.d_year, item.i_brand, item.i_brand_id  \
-#  ORDER BY dt.d_year, sum_agg desc, brand_id  \
-#  LIMIT 100").show()
+
+query3 = spark.sql("SELECT dt.d_year, item.i_brand_id brand_id, item.i_brand brand,SUM(ss_ext_sales_price) sum_agg  \
+ FROM  date_dim dt, store_sales, item  \
+ WHERE dt.d_date_sk = store_sales.ss_sold_date_sk  \
+   AND store_sales.ss_item_sk = item.i_item_sk  \
+   AND item.i_manufact_id = 128  \
+   AND dt.d_moy=11  \
+ GROUP BY dt.d_year, item.i_brand, item.i_brand_id  \
+ ORDER BY dt.d_year, sum_agg desc, brand_id  \
+ LIMIT 100").show()
 
 # q3end = datetime.now()
 # # COMMAND ----------
